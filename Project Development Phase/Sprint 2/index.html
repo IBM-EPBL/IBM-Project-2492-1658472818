@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Calendar</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+.text-{
+  border: 2px solid rgb(119, 255, 0);
+  border-radius: 12px;
+  width: fit-content;
+  padding: 10px;
+  /* background-color: rgb(224, 227, 227); */
+  background-image: linear-gradient(rgba(165, 165, 224, 0.8),rgba(209, 88, 88, 0.8));
+}
+
+body{
+  /* background-color: #accde0; */
+  background-image: linear-gradient(rgba(0, 0, 100, 0.8),rgba(248, 40, 40, 0.8));
+}
+
+.w3-container{
+  background-color: aliceblue;
+}
+ 
+ h1 {
+  /* border: 2px solid red;
+  border-radius: 12px; */
+  padding: 5px;
+  width: fit-content;
+  font-family:fantasy;
+  font-size:50px;
+
+  /* background-color: rgb(253, 253, 252); */
+}
+
+h2.heading-section{
+  text-align: center;
+  border: 2px solid red;
+  border-radius: 12px;
+  padding: 5px;
+  /* width: fit-content; */
+  background-color: rgb(252, 252, 252);
+}
+/* h3{
+  border: 2px solid red;
+  border-radius: 12px;
+  padding: 5px;
+  width: fit-content;
+  background-color: rgb(247, 243, 247);
+} */
+
+.mySlides {
+    display: none;
+  }
+img {
+      vertical-align: middle;
+    }
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(2, 1, 1);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+	</style>
+
+	</head>
+	<body>
+  <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+      <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+      <a href="profile.html" class="w3-bar-item w3-button">PROFILE</a>
+      <a href="#" class="w3-bar-item w3-button">SIGN OUT</a>
+      <a href="#" class="w3-bar-item w3-button">CHANGE PASSWORD</a>
+  </div>
+
+  <div class="w3-teal">
+    <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+    <div class="w3-container">
+      <center><h3>USERNAME</h3></center>
+    </div>
+  </div>
+
+<br><br>
+	<center><h1>CALORIE CALCULATOR</h1></center>
+  <br><br>
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+          <center><img src="apple.jpg" width="450" height="450"></center><br>
+        <center><div class="text-"><h4>APPLE : 52/100g</h4></div></center>
+        </div>
+        
+        <div class="mySlides">
+          <center><img src="beef.jpg" width="450" height="450"></center><br>
+        <center><div class="text-"><h4>BEEF : 250/100g</h4></div></center>
+        </div>
+        
+        <div class="mySlides">
+          <center><img src="papaya.jpg" width="450" height="450"></center><br>
+          <center><div class="text-"><h4>PAPAYA : 32/100g</h4></div></center>
+        </div>
+
+        <div class="mySlides">
+          <center><img src="kiwi.jpg" width="450" height="450"></center><br>
+          <center><div class="text-"><h4>KIWI : 61/100g</h4></div></center>
+        </div>
+
+        <div class="mySlides">
+          <center><img src="lemon.jpg" width="450" height="450"></center><br>
+          <center><div class="text-"><h4>LEMON : 29/100g</h4></div></center>
+        </div>
+
+        <div class="mySlides">
+          <center><img src="mutton.jpg" width="450" height="450"></center><br>
+          <center><div class="text-"><h4>MUTTON : 294/100g</h4></div></center>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        
+        <!-- <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div> -->
+
+        
+<script>
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+  }
+  
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+</script>
+        
+<script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+</script>
+
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">CALORIE CALENDAR</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="content w-100">
+				    <div class="calendar-container">
+				      <div class="calendar"> 
+				        <div class="year-header"> 
+				          <span class="left-button fa fa-chevron-left" id="prev"> </span> 
+				          <span class="year" id="label"></span> 
+				          <span class="right-button fa fa-chevron-right" id="next"> </span>
+				        </div> 
+				        <table class="months-table w-100"> 
+				          <tbody>
+				            <tr class="months-row">
+				              <td class="month">Jan</td> 
+				              <td class="month">Feb</td> 
+				              <td class="month">Mar</td> 
+				              <td class="month">Apr</td> 
+				              <td class="month">May</td> 
+				              <td class="month">Jun</td> 
+				              <td class="month">Jul</td>
+				              <td class="month">Aug</td> 
+				              <td class="month">Sep</td> 
+				              <td class="month">Oct</td>          
+				              <td class="month">Nov</td>
+				              <td class="month">Dec</td>
+				            </tr>
+				          </tbody>
+				        </table> 
+				        
+				        <table class="days-table w-100"> 
+				          <td class="day">Sun</td> 
+				          <td class="day">Mon</td> 
+				          <td class="day">Tue</td> 
+				          <td class="day">Wed</td> 
+				          <td class="day">Thu</td> 
+				          <td class="day">Fri</td> 
+				          <td class="day">Sat</td>
+				        </table> 
+				        <div class="frame"> 
+				          <table class="dates-table w-100"> 
+			              <tbody class="tbody">             
+			              </tbody> 
+				          </table>
+				        </div> 
+				        <button class="button" id="add-button">CONSUMED CALORIE</button>
+				      </div>
+				    </div>
+				    <div class="events-container">
+				    </div>
+				    <div class="dialog" id="dialog">
+				        <h2 class="dialog-header">CALORIES</h2>
+				        <form class="form" id="form">
+				          <div class="form-container" align="center">
+				            <label class="form-label" id="valueFromMyButton" for="name">REQUIRED</label>
+				            <input class="input" type="text" id="name" maxlength="36">
+				            <label class="form-label" id="valueFromMyButton" for="count">INTAKE</label>
+				            <input class="input" type="number" id="count" min="0" max="1000000" maxlength="7">
+				            <input type="button" value="Cancel" class="button" id="cancel-button">
+				            <input type="button" value="OK" class="button button-white" id="ok-button">
+				          </div>
+				        </form>
+				      </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+	</body>
+</html>
+
