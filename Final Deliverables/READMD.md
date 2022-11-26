@@ -11,4 +11,4 @@ Documentation of project and its development
 
 **Video Demo Link**  
 Demo of application  
-https://drive.google.com/drive/folders/1Sr7FL24jXvHoSzNzgQNIdtK_ZouEaY_w?usp=share_link
+https://drive.google.com/file/d/1W-QrEdxxwfiwsz7qiHpbeZw25oM1w5qE/view?usp=sharing
