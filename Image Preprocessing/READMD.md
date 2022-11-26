@@ -1,10 +1,10 @@
 ## Image Preprocessing
 
-##### Dataset  
+**Dataset**  
 The dataset contains images of five fruits:  
 -  Apples, Bananas, Oranges, Pineapples, and Watermelons  
 
-##### Preprocessing  
+**Preprocessing**  
 - Install Tensorflow package
 - Import ImageDataGenerator class
 - Configure ImageDataGenerator class
