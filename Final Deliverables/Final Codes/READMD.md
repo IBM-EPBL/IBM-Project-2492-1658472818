@@ -1,49 +1,48 @@
 ## Final Codes
 
 **Sign-Up/Login Page**  
-'reg_form.html'  
+> 'reg_form.html'  
  
 
 **Backend for Sign Up using Google Account**  
-- 'Google Sign Up.js'  
-- 'Google Sign Up Test.js'
+> 'Google Sign Up.js'  
+> 'Google Sign Up Test.js'  
 
 
 **Profile Page**  
-'profile.html'
+> 'profile.html'
 
 
 **Main page**  
-'index.html'  
-- Slideshow of ingredients with calorie value
-- Upload of image for nutrition analysis
-- Calorie Calendar
+- Slideshow of ingredients with calorie value  
+- Upload of image for nutrition analysis  
+- Calorie Calendar  
+> 'index.html'  
  
  
 **Registration for Diet Plan**  
-'form.html'
+> 'form.html'
 
 
 **JSON file with Calorie value of food items present in dataset**  
-'Calories.json'
+> 'Calories.json'  
 
  
 **Machine Learning model for image classification**   
-'Fruit_Veg_Classification.ipynb'  
 Using MobileNet-V2  
- 
+> 'Fruit_Veg_Classification.ipynb'  
+
  
 **Compressed ML model**  
-'FV.h5'
 Built by above notebook  
 Integrated to Flask in end application  
- 
+> 'FV.h5'  
  
 **Flask Application that classifies image uploaded**    
-'app.py'  
-Nutrition Analysis is done based on image label
+Nutrition Analysis is done based on image label  
+> 'app.py'   
  
  
 **List of Diet Plans**  
-'split.html'
+> 'split.html'
 
