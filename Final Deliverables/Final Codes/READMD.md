@@ -1,16 +1,17 @@
 ## Final Codes
 
-#### 'reg_form.html'  
-Sign-Up/Login Page  
+**Sign-Up/Login Page  **
+'reg_form.html'  
  
- 
-#### 'Google Sign Up.js'
-#### 'Google Sign Up Test.js'
-Backend for Sign Up using Google Account
- 
- 
-#### 'profile.html'
-Profile Page
+
+**Backend for Sign Up using Google Account**
+- 'Google Sign Up.js'
+- 'Google Sign Up Test.js'
+
+
+**Profile Page**
+'profile.html'
+
  
  
 #### 'index.html'
